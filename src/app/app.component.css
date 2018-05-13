@@ -1,0 +1,9 @@
+.examples {
+    display: flex;
+    justify-content: flex-start;
+    padding-bottom: 20px;
+}
+
+.active {
+    color: white;
+}

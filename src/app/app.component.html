@@ -1,0 +1,16 @@
+<mat-toolbar color="primary">
+  <h1>{{title}}</h1>
+</mat-toolbar>
+<p>The purpose of this repo is to have a bare-bones starting point for 
+  Angular 6 with <a href="https://universal.angular.io/" target="_blank">Universal Rendering</a>
+   and <a href="https://material.angular.io/" target="_blank">Material Design Components</a>.</p>
+<h3 class="example-title">
+  Examples:
+</h3>
+<div class="examples">
+  <button mat-raised-button color="accent" [routerLink]="'button-example'" [routerLinkActive]="'active'">Buttons</button>
+  <button mat-raised-button color="accent" [routerLink]="'card-example'" [routerLinkActive]="'active'">Card</button>
+  <button mat-raised-button color="accent" [routerLink]="'bottom-sheet-example'" [routerLinkActive]="'active'">Bottom Sheet</button>
+</div>
+<mat-divider></mat-divider>
+<router-outlet></router-outlet>
