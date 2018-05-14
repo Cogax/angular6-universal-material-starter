@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatCardModule, MatIconModule, MatButtonModule, MatToolbarModule, MatDividerModule } from '@angular/material';
+import { MatCardModule, MatIconModule, MatButtonModule, MatToolbarModule, MatDividerModule, MatBottomSheetModule } from '@angular/material';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -12,6 +12,7 @@ import { isPlatformBrowser } from '@angular/common';
 import { ButtonComponent } from './components/button/button.component';
 import { CardComponent } from './components/card/card.component';
 import { BottomSheetComponent } from './components/bottom-sheet/bottom-sheet.component';
+import { SheetComponent } from './components/sheet/sheet.component';
 
 
 @NgModule({
@@ -25,16 +26,21 @@ import { BottomSheetComponent } from './components/bottom-sheet/bottom-sheet.com
     MatIconModule,
     MatButtonModule,
     MatToolbarModule,
-    MatDividerModule
+    MatDividerModule,
+    MatBottomSheetModule
   ],
   declarations: [
     AppComponent,
     ButtonComponent,
     CardComponent,
-    BottomSheetComponent
+    BottomSheetComponent,
+    SheetComponent
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [
+    SheetComponent
+  ]
 })
 export class AppModule {
   constructor(
